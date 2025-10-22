@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Firestore + DOM</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="container-header">
+        <h1>Práctica Firebase Firestore + DOM</h1>
+    </header>
+    <main class="container-main">
+        <form id="contact">
+            <h2>Crear Usuario</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" name=""></textarea>
+    
+            <label for="urlImg">Imagen:</label>
+            <input type="url" id="urlImg" name="urlImg">
+
+            <input type="submit" value="Enviar" id="create">
+        </form>
+        <section id="section-button">
+            <button id="delete">Borrar Contacto</button>
+            <button id="delete-all">Borrar todos los contactos</button>
+        </section>
+        <div id="form-contact"></div>
+    </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
